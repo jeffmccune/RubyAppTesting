@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+#
+
+# Add lib directory to load path...
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), "..", "lib"))
+
+require 'hello_world'
+
+@app = HelloWorld.new(ARGV)
+@app.run
+
